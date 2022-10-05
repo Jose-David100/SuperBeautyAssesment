@@ -4,7 +4,7 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Equipo(models.Model):
-	referencia =  models.CharField(max_length=50, blank=False, null=False)
+	referencia =  models.CharField(max_length=50, blank=False, null=False, unique=True)
 	marca = models.CharField(max_length=50, blank=False, null=False)
 	procesador = models.CharField(max_length=50, blank=False, null=False)
 	memoria = models.CharField(max_length=50, blank=False, null=False)
